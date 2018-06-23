@@ -29,7 +29,7 @@ public class script_move : MonoBehaviour {
         if (playerNumber == 1)
         {
 
-            var getInput = new Vector3(Input.GetAxis("P1 Move Horizontal"), 0, Input.GetAxis("P1 Move Vertical") * moveSpeed);
+            var getInput = new Vector3(Input.GetAxisRaw("P1 Move Horizontal"), 0, Input.GetAxisRaw("P1 Move Vertical") * moveSpeed);
 
             movement.velocity = new Vector3(getInput.x * moveSpeed, movement.velocity.y, getInput.z);
 
@@ -41,7 +41,7 @@ public class script_move : MonoBehaviour {
         else if (playerNumber == 2)
         {
 
-            var getInput = new Vector3(Input.GetAxis("P2 Move Horizontal"), 0, Input.GetAxis("P2 Move Vertical") * moveSpeed);
+            var getInput = new Vector3(Input.GetAxisRaw("P2 Move Horizontal"), 0, Input.GetAxisRaw("P2 Move Vertical") * moveSpeed);
 
             movement.velocity = new Vector3(getInput.x * moveSpeed, movement.velocity.y, getInput.z);
 
