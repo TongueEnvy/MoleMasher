@@ -680,7 +680,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac2d744cd93b64140a32c1d751b1622e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  launchForce: 25
+  launchForce: 40
   body: {fileID: 1096539147340052}
   struck: {fileID: 0}
 --- !u!114 &114381397082721434
@@ -735,7 +735,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac2d744cd93b64140a32c1d751b1622e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  launchForce: 25
+  launchForce: 40
   body: {fileID: 1096539147340052}
   struck: {fileID: 0}
 --- !u!114 &114840535421961290

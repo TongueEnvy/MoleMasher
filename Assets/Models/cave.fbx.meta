@@ -17,9 +17,11 @@ ModelImporter:
     400010: Spot.002
     2000000: Camera
     2100000: Material
+    2100002: Concrete
     2300000: Cube
     3300000: Cube
     4300000: Cube
+    6400000: Cube
     10800000: Spot
     10800002: Spot.001
     10800004: Spot.002
@@ -56,7 +58,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1

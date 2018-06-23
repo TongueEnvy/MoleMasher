@@ -10,7 +10,7 @@ public class script_spawn : MonoBehaviour {
     private void Start()
     {
 
-        GameObject.Find("Scorekeeper").GetComponent<script_spawnPlayers>().spawners.Add(gameObject);
+        GameObject.Find("ScoreKeeper").GetComponent<script_spawnPlayers>().spawners.Add(gameObject);
 
     }
 

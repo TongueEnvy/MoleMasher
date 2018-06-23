@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class script_playerDie : MonoBehaviour {
 
+    public GameObject scoreKeeper;
+
 	// Use this for initialization
 	void Start () {
 
-        
+        scoreKeeper = GameObject.Find("ScoreKeeper");
 
 	}
 
@@ -17,8 +19,28 @@ public class script_playerDie : MonoBehaviour {
 
         if (collision.gameObject.tag == "Ball")
         {
-            GameObject.Find("Scorekeeper").GetComponent<script_respawnPlayers>().respawning = true;
-            GameObject.Find("Scorekeeper").GetComponent<script_respawnPlayers>().respawnCounter = GameObject.Find("Scorekeeper").GetComponent<script_respawnPlayers>().respawnTimer;
+            if (scoreKeeper.GetComponent<script_trackScore>().roundIsDecided == false)
+                {
+
+                    if(gameObject.GetComponent<script_move>().playerNumber == 1)
+                    {
+
+                        scoreKeeper.GetComponent<script_trackScore>().player2Score += 1;
+                        scoreKeeper.GetComponent<script_trackScore>().roundIsDecided = true;
+
+                    }
+                    else if (gameObject.GetComponent<script_move>().playerNumber == 2)
+                    {
+
+                        scoreKeeper.GetComponent<script_trackScore>().player1Score += 1;
+                        scoreKeeper.GetComponent<script_trackScore>().roundIsDecided = true;
+
+                    }
+
+                }
+            scoreKeeper.GetComponent<script_respawnPlayers>().respawning = true;
+            scoreKeeper.GetComponent<script_respawnPlayers>().respawnCounter = GameObject.Find("Scorekeeper").GetComponent<script_respawnPlayers>().respawnTimer;
+
             Destroy(gameObject);
 
         }

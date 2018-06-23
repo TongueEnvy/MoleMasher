@@ -20,6 +20,9 @@ public class script_respawnPlayers : MonoBehaviour {
     {
         if (respawning == true)
         {
+
+            gameObject.GetComponent<script_trackScore>().roundIsDecided = false;
+            gameObject.GetComponent<script_trackScore>().currentRound += 1;
             respawnCounter -= Time.deltaTime;
             if(respawnCounter <= 0 && respawning)
             {
