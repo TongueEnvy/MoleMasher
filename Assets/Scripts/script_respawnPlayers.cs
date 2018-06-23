@@ -49,6 +49,7 @@ public class script_respawnPlayers : MonoBehaviour {
 
                 }
 
+                ball.GetComponent<script_limitVelocity>().hasBeenServed = false;
                 ball.transform.position = new Vector3(0, .5f, 0);
                 ball.GetComponent<Rigidbody>().velocity = Vector3.zero;
 
