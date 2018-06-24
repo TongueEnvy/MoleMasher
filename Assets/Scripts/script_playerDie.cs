@@ -10,6 +10,7 @@ public class script_playerDie : MonoBehaviour {
     public GameObject bloodStainBall;
     public float dropletHorSpeed;
     public float dropletVertSpeed;
+    public AudioClip die;
 
     // Use this for initialization
     void Start () {
@@ -25,6 +26,9 @@ public class script_playerDie : MonoBehaviour {
         if (collision.gameObject.tag == "Ball")
         {
 
+            collision.gameObject.GetComponent<AudioSource>().clip = die;
+            collision.gameObject.GetComponent<AudioSource>().Play();
+
             var newSplatter = Instantiate<GameObject>(bloodStainFloor);
             newSplatter.transform.parent = gameObject.transform;
             newSplatter.transform.localPosition = Vector3.zero;
@@ -39,7 +43,7 @@ public class script_playerDie : MonoBehaviour {
             var dropletCount = (int)Random.Range(5, 10);
             for(var i = 0; i <= dropletCount; i += 1)
             {
-
+                
                 var newDroplet = Instantiate<GameObject>(bloodDrop);
                 newDroplet.transform.parent = gameObject.transform;
                 newDroplet.transform.localPosition = new Vector3(0, .5f, 0);

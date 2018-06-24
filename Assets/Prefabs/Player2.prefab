@@ -718,6 +718,7 @@ MonoBehaviour:
     type: 2}
   dropletHorSpeed: 5
   dropletVertSpeed: 10
+  die: {fileID: 8300000, guid: be55a5a1954619b4f9db08793fe0fe97, type: 3}
 --- !u!114 &114106704464771844
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -767,7 +768,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   launchForce: 40
   body: {fileID: 1956605040984858}
-  struck: {fileID: 0}
+  struck: {fileID: 8300000, guid: 5253badf3f695d0478e160a95a77059c, type: 3}
 --- !u!114 &114490143369100242
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -793,7 +794,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   launchForce: 40
   body: {fileID: 1956605040984858}
-  struck: {fileID: 0}
+  struck: {fileID: 8300000, guid: 5253badf3f695d0478e160a95a77059c, type: 3}
 --- !u!119 &119278254203030428
 Projector:
   m_ObjectHideFlags: 1

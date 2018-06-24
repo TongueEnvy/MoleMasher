@@ -214,6 +214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   splatter: {fileID: 1386256879361268, guid: 300835abca9f84b46af612599f3e3f08, type: 2}
+  splatterSound: {fileID: 8300000, guid: c07992f17dccf6048b12c6d5bdf55ef0, type: 3}
 --- !u!135 &135514805757975670
 SphereCollider:
   m_ObjectHideFlags: 1
