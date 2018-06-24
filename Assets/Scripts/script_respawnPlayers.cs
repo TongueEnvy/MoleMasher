@@ -20,6 +20,9 @@ public class script_respawnPlayers : MonoBehaviour {
     {
         if (respawning == true)
         {
+
+            gameObject.GetComponent<script_trackScore>().roundIsDecided = false;
+            gameObject.GetComponent<script_trackScore>().currentRound += 1;
             respawnCounter -= Time.deltaTime;
             if(respawnCounter <= 0 && respawning)
             {
@@ -46,6 +49,7 @@ public class script_respawnPlayers : MonoBehaviour {
 
                 }
 
+                ball.GetComponent<script_limitVelocity>().hasBeenServed = false;
                 ball.transform.position = new Vector3(0, .5f, 0);
                 ball.GetComponent<Rigidbody>().velocity = Vector3.zero;
 

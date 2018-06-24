@@ -8,6 +8,9 @@ public class script_limitVelocity : MonoBehaviour {
     public float maxHorizontalSpeed;
     float minVerticalSpeed;
     public float maxVerticalSpeed;
+    public bool hasBeenServed;
+    public AudioSource sfx;
+    public AudioClip bounce;
 
 	// Use this for initialization
 	void Start () {
@@ -15,42 +18,60 @@ public class script_limitVelocity : MonoBehaviour {
         minVerticalSpeed = Physics.gravity.y;
 
 	}
-	
-	// Update is called once per frame
-	void Update () {
 
-        var getVelocity = gameObject.GetComponent<Rigidbody>().velocity;
+    // Update is called once per frame
+    void Update()
+    {
 
-        getVelocity.y = Mathf.Clamp(getVelocity.y ,minVerticalSpeed, maxVerticalSpeed);
+        if (hasBeenServed == true)
+        {
+            var getVelocity = gameObject.GetComponent<Rigidbody>().velocity;
+
+            getVelocity.y = Mathf.Clamp(getVelocity.y, minVerticalSpeed, maxVerticalSpeed);
+
+            var newHorVelocity = new Vector3(getVelocity.x, 0, getVelocity.z);
+
+            if (newHorVelocity.magnitude > maxHorizontalSpeed)
+            {
+
+                newHorVelocity.Normalize();
+                newHorVelocity = (newHorVelocity * maxHorizontalSpeed);
+
+            }
+
+            if (newHorVelocity.magnitude < minHorizontalSpeed)
+            {
+
+                newHorVelocity.Normalize();
+                newHorVelocity = (newHorVelocity * minHorizontalSpeed);
+
+            }
+
+            getVelocity.x = newHorVelocity.x;
+            getVelocity.z = newHorVelocity.z;
+
+
+            gameObject.GetComponent<Rigidbody>().velocity = getVelocity;
+
+        }
+        else
+        {
+
+            gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
+
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
         
-        if(getVelocity.x > 0)
+        if(collision.gameObject.tag == "Barrier")
         {
 
-            getVelocity.x = Mathf.Clamp(getVelocity.x ,minHorizontalSpeed, maxHorizontalSpeed);
+            sfx.clip = bounce;
+            sfx.Play();
 
         }
-        else if (getVelocity.x < 0)
-        {
-
-            getVelocity.x = Mathf.Clamp(getVelocity.x , -minHorizontalSpeed, -maxHorizontalSpeed);
-
-        }
-
-        if (getVelocity.z > 0)
-        {
-
-            getVelocity.z = Mathf.Clamp(getVelocity.z, minHorizontalSpeed, maxHorizontalSpeed);
-
-        }
-        else if (getVelocity.z < 0)
-        {
-
-            getVelocity.z = Mathf.Clamp(getVelocity.z, -minHorizontalSpeed, -maxHorizontalSpeed);
-
-        }
-
-
-        gameObject.GetComponent<Rigidbody>().velocity = getVelocity;
 
     }
 }
