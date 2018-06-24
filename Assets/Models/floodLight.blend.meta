@@ -1,51 +1,40 @@
 fileFormatVersion: 2
-guid: 138bfc45fc59c244c90eaa7caa3570d2
+guid: b46b805d3e143bc4fa3992f434b3a5e1
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: Camera
-    100002: //RootNode
-    100004: Cube
-    100006: Spot
-    100008: Spot.001
-    100010: Spot.002
-    100012: Cube.001
-    100014: cartRail
-    100016: cartRail.001
-    400000: Camera
-    400002: //RootNode
-    400004: Cube
-    400006: Spot
-    400008: Spot.001
-    400010: Spot.002
-    400012: Cube.001
-    400014: cartRail
-    400016: cartRail.001
-    2000000: Camera
-    2100000: Material
-    2100002: Concrete
-    2100004: Wood
+    100000: //RootNode
+    400000: //RootNode
+    2100000: BlackPlastic
+    2100002: YellowPlastic
+    2100004: Lamp
     2100006: Metal
-    2300000: Cube
-    2300002: Cube.001
-    2300004: cartRail
-    2300006: cartRail.001
-    3300000: Cube
-    3300002: Cube.001
-    3300004: cartRail
-    3300006: cartRail.001
+    2300000: //RootNode
+    3300000: //RootNode
     4300000: Cube
-    4300002: Cube.001
-    4300004: cartRail.001
-    4300006: cartRail
-    6400000: Cube
-    6400002: Cube.001
-    6400004: cartRail
-    6400006: cartRail.001
-    10800000: Spot
-    10800002: Spot.001
-    10800004: Spot.002
-  externalObjects: {}
+    7400000: Default Take
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackPlastic
+    second: {fileID: 2100000, guid: 2ca7d9f9cecc73440a4dfd687595f2c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lamp
+    second: {fileID: 2100000, guid: d6891015a2a876e45b242b6b27327d5d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal
+    second: {fileID: 2100000, guid: dcb6543b4772eb14a8352047d585e20c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: YellowPlastic
+    second: {fileID: 2100000, guid: 726fbf393a5a7b346bc4bf1615360344, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -78,7 +67,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -120,7 +109,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

@@ -9,6 +9,8 @@ public class script_limitVelocity : MonoBehaviour {
     float minVerticalSpeed;
     public float maxVerticalSpeed;
     public bool hasBeenServed;
+    public AudioSource sfx;
+    public AudioClip bounce;
 
 	// Use this for initialization
 	void Start () {
@@ -58,5 +60,18 @@ public class script_limitVelocity : MonoBehaviour {
             gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
 
         }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        
+        if(collision.gameObject.tag == "Barrier")
+        {
+
+            sfx.clip = bounce;
+            sfx.Play();
+
+        }
+
     }
 }

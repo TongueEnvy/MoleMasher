@@ -153,6 +153,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1940485480985532
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4336415470271120}
+  - component: {fileID: 119278254203030428}
+  m_Layer: 9
+  m_Name: Projector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1956605040984858
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,10 +228,24 @@ Transform:
   m_LocalPosition: {x: -7, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 4336415470271120}
   - {fileID: 4869575371353532}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!4 &4336415470271120
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1940485480985532}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: 0.7071068, w: 0}
+  m_LocalPosition: {x: -0, y: 2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4187212810504050}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!4 &4531305067339088
 Transform:
   m_ObjectHideFlags: 1
@@ -282,7 +312,7 @@ Transform:
   - {fileID: 4165578734764258}
   - {fileID: 4605277054257370}
   m_Father: {fileID: 4187212810504050}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4880516013303708
 Transform:
@@ -688,6 +718,7 @@ MonoBehaviour:
     type: 2}
   dropletHorSpeed: 5
   dropletVertSpeed: 10
+  die: {fileID: 8300000, guid: be55a5a1954619b4f9db08793fe0fe97, type: 3}
 --- !u!114 &114106704464771844
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -737,7 +768,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   launchForce: 40
   body: {fileID: 1956605040984858}
-  struck: {fileID: 0}
+  struck: {fileID: 8300000, guid: 5253badf3f695d0478e160a95a77059c, type: 3}
 --- !u!114 &114490143369100242
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -763,7 +794,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   launchForce: 40
   body: {fileID: 1956605040984858}
-  struck: {fileID: 0}
+  struck: {fileID: 8300000, guid: 5253badf3f695d0478e160a95a77059c, type: 3}
+--- !u!119 &119278254203030428
+Projector:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1940485480985532}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_NearClipPlane: 0.1
+  m_FarClipPlane: 100
+  m_FieldOfView: 60
+  m_AspectRatio: 1
+  m_Orthographic: 0
+  m_OrthographicSize: 10
+  m_Material: {fileID: 2100000, guid: e30ff3588e719f34bbf0c66f22d97487, type: 2}
+  m_IgnoreLayers:
+    serializedVersion: 2
+    m_Bits: 2560
 --- !u!136 &136073217596133558
 CapsuleCollider:
   m_ObjectHideFlags: 1
