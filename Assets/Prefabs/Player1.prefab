@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4126423735235720}
   - component: {fileID: 33147609176187298}
   - component: {fileID: 23760903317966730}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Right Eye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 33740660376804208}
   - component: {fileID: 23415075077807714}
   - component: {fileID: 95816420787534110}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: P1 Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 4165738079593990}
   - component: {fileID: 33193575312355166}
   - component: {fileID: 23072082062821274}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Snoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 4973872206832112}
   - component: {fileID: 33669091969708202}
   - component: {fileID: 23128926126493318}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Left Eye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -148,7 +148,7 @@ GameObject:
   - component: {fileID: 95112313476088398}
   - component: {fileID: 114470159518631120}
   - component: {fileID: 114381397082721434}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: P1 mole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -165,7 +165,7 @@ GameObject:
   - component: {fileID: 4303038975104458}
   - component: {fileID: 33829669612087892}
   - component: {fileID: 23124426999163798}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Tail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -712,6 +712,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42823fdbca7ed2d46aabe37a44d472d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreKeeper: {fileID: 0}
+  bloodDrop: {fileID: 1373554525535130, guid: c94b77317344c814f9ba6e0026e870ab, type: 2}
+  bloodStainFloor: {fileID: 1386256879361268, guid: 300835abca9f84b46af612599f3e3f08,
+    type: 2}
+  bloodStainBall: {fileID: 1386256879361268, guid: 3a2d32fe72f8e714998355a2e2c0c9f9,
+    type: 2}
+  dropletHorSpeed: 5
+  dropletVertSpeed: 10
 --- !u!114 &114470159518631120
 MonoBehaviour:
   m_ObjectHideFlags: 1
