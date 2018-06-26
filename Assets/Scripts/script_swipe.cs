@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class script_swipe : MonoBehaviour {
 
-    public bool useRightPaw;
-    public bool readyToSwing;
+    public bool useRightPaw		= true;
+    public bool readyToSwing	= true;
     public Animator paws;
     public AnimationClip pawsIdle;
     public AnimationClip rightHook;
