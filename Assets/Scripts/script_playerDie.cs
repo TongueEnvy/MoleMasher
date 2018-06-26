@@ -47,7 +47,7 @@ public class script_playerDie : MonoBehaviour {
                 var newDroplet = Instantiate<GameObject>(bloodDrop);
                 newDroplet.transform.parent = gameObject.transform;
                 newDroplet.transform.localPosition = new Vector3(0, .5f, 0);
-                var dropScaleFactor = Random.Range(.1f, .25f);
+                var dropScaleFactor = Random.Range(.1f, .5f);
                 newDroplet.transform.parent = null;
                 newDroplet.transform.localScale = new Vector3(dropScaleFactor, dropScaleFactor, dropScaleFactor);
                 newDroplet.GetComponent<Rigidbody>().velocity = new Vector3(Random.Range(-dropletHorSpeed, dropletHorSpeed), Random.Range(0, dropletVertSpeed), Random.Range(-dropletHorSpeed, dropletHorSpeed));
