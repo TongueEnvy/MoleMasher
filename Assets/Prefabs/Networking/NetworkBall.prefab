@@ -398,10 +398,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minHorizontalSpeed: 10
   maxHorizontalSpeed: 25
+  minVerticalSpeed: 0
   maxVerticalSpeed: 0
   hasBeenServed: 0
-  sfx: {fileID: 0}
-  bounce: {fileID: 0}
+  bounce: {fileID: 8300000, guid: 2766e7095ba7f2f45b1e650e7bb222ca, type: 3}
 --- !u!119 &119391890515938666
 Projector:
   m_ObjectHideFlags: 1
