@@ -5,28 +5,32 @@ public class PlayerMove: NetworkBehaviour {
     public string actorName;
     public int playerNumber;
     public float moveSpeed;
-    public Rigidbody movement;
     public Animator body;
     public AnimationClip bodyShuffle;
     public GameObject hands;
-    public GameObject spawner;
+    //public GameObject spawner;
+	
 	public bool useRightPaw		= true;
     public bool readyToSwing	= true;
-    public Animator paws;
+    //public Animator paws;
     public AnimationClip pawsIdle;
     public AnimationClip rightHook;
     public AnimationClip leftHook;
     public GameObject self;
 
+	private Animator paws;
+	private Rigidbody movement;
+	
 	void Start() {
         gameObject.name = actorName;
         movement = gameObject.GetComponent<Rigidbody>();
+		paws = self.GetComponent<Animator>();
         body.Play(bodyShuffle.name);
         body.speed = .25f;
 		paws.Play(pawsIdle.name);
 	}
 	
-	public void Update() {
+	void Update() {
         if(!isLocalPlayer) {
             return;
         }
@@ -43,8 +47,8 @@ public class PlayerMove: NetworkBehaviour {
 	
 	// This [Command] code is called on the Client …
     // … but it is run on the Server!
-	[Command]
-    public void Swipe() {
+	//[Command]
+    void Swipe() {
         if(readyToSwing == true) {
             if (useRightPaw == true) {
                 paws.Play(rightHook.name);
