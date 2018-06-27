@@ -4,10 +4,10 @@ public class NetworkBallLook: MonoBehaviour {
     private GameObject ball;
 
     void Start() {
-        ball = GameObject.Find("NetworkBall");
+        ball = GameObject.Find("NetworkBall(Clone)");
 	}
 	
 	void Update() {
-        transform.LookAt(new Vector3 (ball.transform.position.x, transform.position.y, ball.transform.position.z));
+        transform.LookAt(ball.transform);
 	}
 }

@@ -41,14 +41,14 @@ public class PlayerMove: NetworkBehaviour {
         body.speed = Mathf.Clamp(body.speed, .25f, 1);
 
         if(Input.GetButtonDown("P1 Swipe")) {
-            Swipe();
+            CmdSwipe();
         }
     }
 	
 	// This [Command] code is called on the Client …
     // … but it is run on the Server!
-	//[Command]
-    void Swipe() {
+	[Command]
+    void CmdSwipe() {
         if(readyToSwing == true) {
             if (useRightPaw == true) {
                 paws.Play(rightHook.name);
