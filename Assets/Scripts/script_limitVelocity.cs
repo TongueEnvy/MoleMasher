@@ -6,17 +6,17 @@ public class script_limitVelocity : MonoBehaviour {
 
     public float minHorizontalSpeed;
     public float maxHorizontalSpeed;
-    float minVerticalSpeed;
+    public float minVerticalSpeed;
     public float maxVerticalSpeed;
     public bool hasBeenServed;
-    public AudioSource sfx;
     public AudioClip bounce;
+	
+	private AudioSource sfx;
 
 	// Use this for initialization
 	void Start () {
-
         minVerticalSpeed = Physics.gravity.y;
-
+		sfx = this.GetComponent<AudioSource>();
 	}
 
     // Update is called once per frame
