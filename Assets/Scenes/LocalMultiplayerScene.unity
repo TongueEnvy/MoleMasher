@@ -8877,11 +8877,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawners: []
---- !u!1 &657779304 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1802475402894864, guid: 1fccd1481af2b4e46940a0025a4e097a,
-    type: 2}
-  m_PrefabInternal: {fileID: 677776332}
 --- !u!1 &658100653
 GameObject:
   m_ObjectHideFlags: 0
@@ -9088,88 +9083,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 665246605}
---- !u!1001 &677776332
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4621940049612500, guid: 1fccd1481af2b4e46940a0025a4e097a, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4621940049612500, guid: 1fccd1481af2b4e46940a0025a4e097a, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.239
-      objectReference: {fileID: 0}
-    - target: {fileID: 4621940049612500, guid: 1fccd1481af2b4e46940a0025a4e097a, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -3.146497
-      objectReference: {fileID: 0}
-    - target: {fileID: 4621940049612500, guid: 1fccd1481af2b4e46940a0025a4e097a, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4621940049612500, guid: 1fccd1481af2b4e46940a0025a4e097a, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4621940049612500, guid: 1fccd1481af2b4e46940a0025a4e097a, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4621940049612500, guid: 1fccd1481af2b4e46940a0025a4e097a, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4621940049612500, guid: 1fccd1481af2b4e46940a0025a4e097a, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 54684687908392038, guid: 1fccd1481af2b4e46940a0025a4e097a,
-        type: 2}
-      propertyPath: m_Constraints
-      value: 112
-      objectReference: {fileID: 0}
-    - target: {fileID: 114270671070813684, guid: 1fccd1481af2b4e46940a0025a4e097a,
-        type: 2}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 657779304}
-    - target: {fileID: 114270671070813684, guid: 1fccd1481af2b4e46940a0025a4e097a,
-        type: 2}
-      propertyPath: anim
-      value: 
-      objectReference: {fileID: 699553571}
-    - target: {fileID: 114052897348402274, guid: 1fccd1481af2b4e46940a0025a4e097a,
-        type: 2}
-      propertyPath: foreHandWindUp
-      value: 
-      objectReference: {fileID: 7400000, guid: a7ec9bdd66e7c914ba0ae6c6793eef9a, type: 2}
-    - target: {fileID: 114052897348402274, guid: 1fccd1481af2b4e46940a0025a4e097a,
-        type: 2}
-      propertyPath: backHandWindUp
-      value: 
-      objectReference: {fileID: 7400000, guid: 4ba0e76259ac61740b3085a3a250f293, type: 2}
-    - target: {fileID: 114052897348402274, guid: 1fccd1481af2b4e46940a0025a4e097a,
-        type: 2}
-      propertyPath: foreHandSwing
-      value: 
-      objectReference: {fileID: 7400000, guid: 7987e75394efc484f8587d537979e078, type: 2}
-    - target: {fileID: 114052897348402274, guid: 1fccd1481af2b4e46940a0025a4e097a,
-        type: 2}
-      propertyPath: backHandSwing
-      value: 
-      objectReference: {fileID: 7400000, guid: 50084cc36efcfca409313c648f460edf, type: 2}
-    - target: {fileID: 114270671070813684, guid: 1fccd1481af2b4e46940a0025a4e097a,
-        type: 2}
-      propertyPath: swingState
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1fccd1481af2b4e46940a0025a4e097a, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &678715391
 GameObject:
   m_ObjectHideFlags: 0
@@ -9406,11 +9319,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 694673247}
   m_Mesh: {fileID: 4300000, guid: 1d01230932565a144a26ba085b43d944, type: 3}
---- !u!95 &699553571 stripped
-Animator:
-  m_PrefabParentObject: {fileID: 95663074308321464, guid: 1fccd1481af2b4e46940a0025a4e097a,
-    type: 2}
-  m_PrefabInternal: {fileID: 677776332}
 --- !u!1 &712139639
 GameObject:
   m_ObjectHideFlags: 0
