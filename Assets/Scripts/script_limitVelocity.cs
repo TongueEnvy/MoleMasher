@@ -6,7 +6,6 @@ public class script_limitVelocity : MonoBehaviour {
 
     public float minHorizontalSpeed;
     public float maxHorizontalSpeed;
-    public float minVerticalSpeed;
     public float maxVerticalSpeed;
     public bool hasBeenServed;
     public AudioClip bounce;
@@ -15,8 +14,7 @@ public class script_limitVelocity : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        minVerticalSpeed = Physics.gravity.y;
-		sfx = this.GetComponent<AudioSource>();
+		sfx = GetComponent<AudioSource>();
 	}
 
     // Update is called once per frame
@@ -27,7 +25,12 @@ public class script_limitVelocity : MonoBehaviour {
         {
             var getVelocity = gameObject.GetComponent<Rigidbody>().velocity;
 
-            getVelocity.y = Mathf.Clamp(getVelocity.y, minVerticalSpeed, maxVerticalSpeed);
+            if(getVelocity.y > maxVerticalSpeed)
+            {
+
+                getVelocity.y = maxVerticalSpeed;
+
+            }
 
             var newHorVelocity = new Vector3(getVelocity.x, 0, getVelocity.z);
 

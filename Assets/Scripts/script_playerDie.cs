@@ -18,7 +18,7 @@ public class script_playerDie: MonoBehaviour {
 
     // Update is called once per frame
     private void OnCollisionEnter(Collision collision) {
-        if (collision.gameObject.tag == "Ball") {
+        if (collision.gameObject.tag == "Ball" && scoreKeeper != null) {
             collision.gameObject.GetComponent<AudioSource>().clip = die;
             collision.gameObject.GetComponent<AudioSource>().Play();
 
