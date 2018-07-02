@@ -17,6 +17,7 @@ public class script_trackScore : MonoBehaviour {
     public Text header;
     public Text p1ScoreCounter;
     public Text p2ScoreCounter;
+    public Text roundcounter;
 
     public int victor;
 
@@ -74,8 +75,9 @@ public class script_trackScore : MonoBehaviour {
 
         }
 
-        p1ScoreCounter.text = player1Name + ":" + player1Score.ToString();
-        p2ScoreCounter.text = player2Name + ":" + player2Score.ToString();
+        p1ScoreCounter.text = player1Name + " : " + player1Score.ToString();
+        p2ScoreCounter.text = player2Name + " : " + player2Score.ToString();
+        roundcounter.text = "Round : " + (currentRound + 1).ToString() + " / " + (roundsPerMatch).ToString();
 
         if(currentRound >= roundsPerMatch)
         {

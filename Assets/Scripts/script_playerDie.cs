@@ -33,7 +33,7 @@ public class script_playerDie: MonoBehaviour {
             newSplatter.transform.localPosition = Vector3.zero;
             newSplatter.transform.eulerAngles = new Vector3(0, Random.Range(0, 360), 0);
 
-            var dropletCount = (int)Random.Range(5, 10);
+            var dropletCount = (int)Random.Range(0, 3);
             
 			for(var i = 0; i <= dropletCount; i += 1) {
                 var newDroplet = Instantiate<GameObject>(bloodDrop);
