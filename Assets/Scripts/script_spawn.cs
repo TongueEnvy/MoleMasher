@@ -21,10 +21,10 @@ public class script_spawn : MonoBehaviour {
         newActor.transform.position = transform.position;
         actorIsDead = false;
 
-        if (newActor.GetComponent<script_move>())
+        if (newActor.GetComponent<script_playerMovement>())
         {
 
-            newActor.GetComponent<script_move>().spawner = gameObject;
+            newActor.GetComponent<script_playerMovement>().spawner = gameObject;
 
         }
 

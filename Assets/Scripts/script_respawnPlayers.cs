@@ -28,10 +28,10 @@ public class script_respawnPlayers : MonoBehaviour {
             {
 
                 respawning = false;
-                if(GameObject.Find("Player1"))
+                if(GameObject.Find("Player One 2.0"))
                 {
 
-                    Destroy(GameObject.Find("Player1"));
+                    Destroy(GameObject.Find("Player One 2.0"));
 
                 }
 

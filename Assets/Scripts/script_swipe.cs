@@ -25,7 +25,7 @@ public class script_swipe : MonoBehaviour {
     public void Update()
     {
 
-        if (Input.GetButtonDown("P1 Swipe") && self.GetComponent<script_move>().playerNumber == 1)
+        if (Input.GetButtonDown("P1 Swipe") && self.GetComponent<script_playerMovement>().playerNumber == 1)
         {
             if (readyToSwing == true)
             {
@@ -48,7 +48,7 @@ public class script_swipe : MonoBehaviour {
             }
         }
 
-        if (Input.GetButtonDown("P2 Swipe") && self.GetComponent<script_move>().playerNumber == 2)
+        if (Input.GetButtonDown("P2 Swipe") && self.GetComponent<script_playerMovement>().playerNumber == 2)
         {
             if (readyToSwing == true)
             {

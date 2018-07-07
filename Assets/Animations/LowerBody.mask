@@ -1,0 +1,134 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: LowerBody
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Armature
+    m_Weight: 0
+  - m_Path: Armature/Root
+    m_Weight: 1
+  - m_Path: Armature/Root/Hip
+    m_Weight: 1
+  - m_Path: Armature/Root/Hip/Waist
+    m_Weight: 0
+  - m_Path: Armature/Root/Hip/Waist/Chest
+    m_Weight: 0
+  - m_Path: Armature/Root/Hip/Waist/Chest/Head
+    m_Weight: 0
+  - m_Path: Armature/Root/Hip/Waist/Chest/Left_Shoulder
+    m_Weight: 0
+  - m_Path: Armature/Root/Hip/Waist/Chest/Left_Shoulder/Left_UpperArm
+    m_Weight: 0
+  - m_Path: Armature/Root/Hip/Waist/Chest/Left_Shoulder/Left_UpperArm/Left_Forearm
+    m_Weight: 0
+  - m_Path: Armature/Root/Hip/Waist/Chest/Left_Shoulder/Left_UpperArm/Left_Forearm/Left_Palm
+    m_Weight: 0
+  - m_Path: Armature/Root/Hip/Waist/Chest/Left_Shoulder/Left_UpperArm/Left_Forearm/Left_Palm/Left_Bird_Knuckle
+    m_Weight: 0
+  - m_Path: Armature/Root/Hip/Waist/Chest/Left_Shoulder/Left_UpperArm/Left_Forearm/Left_Palm/Left_Bird_Knuckle/Left_Bird_Proximal
+    m_Weight: 0
+  - m_Path: Armature/Root/Hip/Waist/Chest/Left_Shoulder/Left_UpperArm/Left_Forearm/Left_Palm/Left_Bird_Knuckle/Left_Bird_Proximal/Left_Bird_Distal
+    m_Weight: 0
+  - m_Path: Armature/Root/Hip/Waist/Chest/Left_Shoulder/Left_UpperArm/Left_Forearm/Left_Palm/Left_Index_Knuckle
+    m_Weight: 0
+  - m_Path: Armature/Root/Hip/Waist/Chest/Left_Shoulder/Left_UpperArm/Left_Forearm/Left_Palm/Left_Index_Knuckle/Left_Index_Proximal
+    m_Weight: 0
+  - m_Path: Armature/Root/Hip/Waist/Chest/Left_Shoulder/Left_UpperArm/Left_Forearm/Left_Palm/Left_Index_Knuckle/Left_Index_Proximal/Left_Index_Distal
+    m_Weight: 0
+  - m_Path: Armature/Root/Hip/Waist/Chest/Left_Shoulder/Left_UpperArm/Left_Forearm/Left_Palm/Left_Pinkie_Knuckle
+    m_Weight: 0
+  - m_Path: Armature/Root/Hip/Waist/Chest/Left_Shoulder/Left_UpperArm/Left_Forearm/Left_Palm/Left_Pinkie_Knuckle/Left_Pinkie_Proximal
+    m_Weight: 0
+  - m_Path: Armature/Root/Hip/Waist/Chest/Left_Shoulder/Left_UpperArm/Left_Forearm/Left_Palm/Left_Pinkie_Knuckle/Left_Pinkie_Proximal/Left_Pinkie_Distal
+    m_Weight: 0
+  - m_Path: Armature/Root/Hip/Waist/Chest/Left_Shoulder/Left_UpperArm/Left_Forearm/Left_Palm/Left_Ring_Knuckle
+    m_Weight: 0
+  - m_Path: Armature/Root/Hip/Waist/Chest/Left_Shoulder/Left_UpperArm/Left_Forearm/Left_Palm/Left_Ring_Knuckle/Left_Ring_Proximal
+    m_Weight: 0
+  - m_Path: Armature/Root/Hip/Waist/Chest/Left_Shoulder/Left_UpperArm/Left_Forearm/Left_Palm/Left_Ring_Knuckle/Left_Ring_Proximal/Left_Ring_Distal
+    m_Weight: 0
+  - m_Path: Armature/Root/Hip/Waist/Chest/Left_Shoulder/Left_UpperArm/Left_Forearm/Left_Thumb_Knuckle
+    m_Weight: 0
+  - m_Path: Armature/Root/Hip/Waist/Chest/Left_Shoulder/Left_UpperArm/Left_Forearm/Left_Thumb_Knuckle/Left_Thumb_Proximal
+    m_Weight: 0
+  - m_Path: Armature/Root/Hip/Waist/Chest/Left_Shoulder/Left_UpperArm/Left_Forearm/Left_Thumb_Knuckle/Left_Thumb_Proximal/Left_Thumb_Distal
+    m_Weight: 0
+  - m_Path: Armature/Root/Hip/Waist/Chest/Right_Shoulder
+    m_Weight: 0
+  - m_Path: Armature/Root/Hip/Waist/Chest/Right_Shoulder/Right_UpperArm
+    m_Weight: 0
+  - m_Path: Armature/Root/Hip/Waist/Chest/Right_Shoulder/Right_UpperArm/Right_Forearm
+    m_Weight: 0
+  - m_Path: Armature/Root/Hip/Waist/Chest/Right_Shoulder/Right_UpperArm/Right_Forearm/Right_Palm
+    m_Weight: 0
+  - m_Path: Armature/Root/Hip/Waist/Chest/Right_Shoulder/Right_UpperArm/Right_Forearm/Right_Palm/Right_Bird_Knuckle
+    m_Weight: 0
+  - m_Path: Armature/Root/Hip/Waist/Chest/Right_Shoulder/Right_UpperArm/Right_Forearm/Right_Palm/Right_Bird_Knuckle/Right_Bird_Proximal
+    m_Weight: 0
+  - m_Path: Armature/Root/Hip/Waist/Chest/Right_Shoulder/Right_UpperArm/Right_Forearm/Right_Palm/Right_Bird_Knuckle/Right_Bird_Proximal/Right_Bird_Distal
+    m_Weight: 0
+  - m_Path: Armature/Root/Hip/Waist/Chest/Right_Shoulder/Right_UpperArm/Right_Forearm/Right_Palm/Right_Index_Knuckle
+    m_Weight: 0
+  - m_Path: Armature/Root/Hip/Waist/Chest/Right_Shoulder/Right_UpperArm/Right_Forearm/Right_Palm/Right_Index_Knuckle/Right_Index_Proximal
+    m_Weight: 0
+  - m_Path: Armature/Root/Hip/Waist/Chest/Right_Shoulder/Right_UpperArm/Right_Forearm/Right_Palm/Right_Index_Knuckle/Right_Index_Proximal/Right_Index_Distal
+    m_Weight: 0
+  - m_Path: Armature/Root/Hip/Waist/Chest/Right_Shoulder/Right_UpperArm/Right_Forearm/Right_Palm/Right_Pinkie_Knuckle
+    m_Weight: 0
+  - m_Path: Armature/Root/Hip/Waist/Chest/Right_Shoulder/Right_UpperArm/Right_Forearm/Right_Palm/Right_Pinkie_Knuckle/Right_Pinkie_Proximal
+    m_Weight: 0
+  - m_Path: Armature/Root/Hip/Waist/Chest/Right_Shoulder/Right_UpperArm/Right_Forearm/Right_Palm/Right_Pinkie_Knuckle/Right_Pinkie_Proximal/Right_Pinkie_Distal
+    m_Weight: 0
+  - m_Path: Armature/Root/Hip/Waist/Chest/Right_Shoulder/Right_UpperArm/Right_Forearm/Right_Palm/Right_Ring_Knuckle
+    m_Weight: 0
+  - m_Path: Armature/Root/Hip/Waist/Chest/Right_Shoulder/Right_UpperArm/Right_Forearm/Right_Palm/Right_Ring_Knuckle/Right_Ring_Proximal
+    m_Weight: 0
+  - m_Path: Armature/Root/Hip/Waist/Chest/Right_Shoulder/Right_UpperArm/Right_Forearm/Right_Palm/Right_Ring_Knuckle/Right_Ring_Proximal/Right_Ring_Distal
+    m_Weight: 0
+  - m_Path: Armature/Root/Hip/Waist/Chest/Right_Shoulder/Right_UpperArm/Right_Forearm/Right_Thumb_Knuckle
+    m_Weight: 0
+  - m_Path: Armature/Root/Hip/Waist/Chest/Right_Shoulder/Right_UpperArm/Right_Forearm/Right_Thumb_Knuckle/Right_Thumb_Proximal
+    m_Weight: 0
+  - m_Path: Armature/Root/Hip/Waist/Chest/Right_Shoulder/Right_UpperArm/Right_Forearm/Right_Thumb_Knuckle/Right_Thumb_Proximal/Right_Thumb_Distal
+    m_Weight: 0
+  - m_Path: Armature/Root/Left_Hip
+    m_Weight: 1
+  - m_Path: Armature/Root/Left_Hip/Left_Thigh
+    m_Weight: 1
+  - m_Path: Armature/Root/Left_Hip/Left_Thigh/Left_Calf
+    m_Weight: 1
+  - m_Path: Armature/Root/Left_Hip/Left_Thigh/Left_Calf/Left_Foot
+    m_Weight: 1
+  - m_Path: Armature/Root/Right_Hip
+    m_Weight: 1
+  - m_Path: Armature/Root/Right_Hip/Right_Thigh
+    m_Weight: 1
+  - m_Path: Armature/Root/Right_Hip/Right_Thigh/Right_Calf
+    m_Weight: 1
+  - m_Path: Armature/Root/Right_Hip/Right_Thigh/Right_Calf/Right_Foot
+    m_Weight: 1
+  - m_Path: Body
+    m_Weight: 1
+  - m_Path: Left_Arm
+    m_Weight: 1
+  - m_Path: Left_Eye
+    m_Weight: 1
+  - m_Path: Left_Leg
+    m_Weight: 1
+  - m_Path: Right_Arm
+    m_Weight: 1
+  - m_Path: Right_Eye
+    m_Weight: 1
+  - m_Path: Right_Leg
+    m_Weight: 1
+  - m_Path: Snoot
+    m_Weight: 1
+  - m_Path: Tail
+    m_Weight: 1

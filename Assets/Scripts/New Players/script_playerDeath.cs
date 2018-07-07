@@ -2,23 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class script_playerDie: MonoBehaviour {
+public class script_playerDeath: MonoBehaviour {
     public GameObject scoreKeeper;
     public GameObject bloodDrop;
     public GameObject bloodStainFloor;
     public GameObject bloodStainBall;
+    public GameObject model;
+    public GameObject ghost;
     public float dropletHorSpeed;
     public float dropletVertSpeed;
     public AudioClip die;
 
     // Use this for initialization
     void Start () {
-        scoreKeeper = GameObject.Find("ScoreKeeper");
 	}
 
     // Update is called once per frame
     private void OnCollisionEnter(Collision collision) {
-        if (collision.gameObject.tag == "Ball" && scoreKeeper != null) {
+        if (collision.gameObject.tag == "Ball") {
             collision.gameObject.GetComponent<AudioSource>().clip = die;
             collision.gameObject.GetComponent<AudioSource>().Play();
 
@@ -52,22 +53,13 @@ public class script_playerDie: MonoBehaviour {
                 }
             }
 
-            if (scoreKeeper.GetComponent<script_trackScore>().roundIsDecided == false) {
-                if(gameObject.GetComponent<script_playerMovement>().playerNumber == 1) {
-                    scoreKeeper.GetComponent<script_trackScore>().player2Score += 1;
-                    scoreKeeper.GetComponent<script_trackScore>().roundIsDecided = true;
-                }
-					
-                else if (gameObject.GetComponent<script_playerMovement>().playerNumber == 2) {
-                    scoreKeeper.GetComponent<script_trackScore>().player1Score += 1;
-                    scoreKeeper.GetComponent<script_trackScore>().roundIsDecided = true;
-                }
-            }
-			
-            scoreKeeper.GetComponent<script_respawnPlayers>().respawning = true;
-            scoreKeeper.GetComponent<script_respawnPlayers>().respawnCounter = GameObject.Find("Scorekeeper").GetComponent<script_respawnPlayers>().respawnTimer;
-
-            Destroy(gameObject);
+            gameObject.GetComponent<script_playerMovement>().isAlive = false;
+            gameObject.GetComponent<script_playerMovement>().reviveCounter = gameObject.GetComponent<script_playerMovement>().reviveTimer;
+            gameObject.GetComponent<script_playerMovement>().movementEnabled = true;
+            gameObject.GetComponent<script_playerMovement>().isSwinging = false;
+            gameObject.layer = 15;
+            model.SetActive(false);
+            ghost.SetActive(true);
         }
     }
 }
