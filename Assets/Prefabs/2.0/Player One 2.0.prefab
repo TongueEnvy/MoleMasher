@@ -2153,8 +2153,8 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 7100123b5bd7a074f9019d6ccee1c921, type: 2}
-  m_CullingMode: 2
-  m_UpdateMode: 1
+  m_CullingMode: 0
+  m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
@@ -2171,8 +2171,8 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: aafb7192a63bec94e905e184d467cadc, type: 2}
-  m_CullingMode: 2
-  m_UpdateMode: 1
+  m_CullingMode: 0
+  m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
@@ -2245,7 +2245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74edb7a6c2b35e14984380264f979db0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  launchForce: 15
+  launchForce: 25
   body: {fileID: 1036829414961970}
   struck: {fileID: 8300000, guid: 5253badf3f695d0478e160a95a77059c, type: 3}
 --- !u!136 &136605500499970644

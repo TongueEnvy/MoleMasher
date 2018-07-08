@@ -113,6 +113,7 @@ public class script_playerMovement: MonoBehaviour {
                     arms.speed = 1;
                     arms.Play(armsSwing.name);
                     isSwinging = true;
+                    movementEnabled = true;
                     swingCounter = swingTimer;
 
                 }
