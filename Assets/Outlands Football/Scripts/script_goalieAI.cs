@@ -19,6 +19,8 @@ public class script_goalieAI : MonoBehaviour {
     public float lickTimer;
     float lickCounter;
 
+    Vector3 restPosition;
+
     public bool active;
     bool isLicking;
     bool readyToLick;
@@ -27,6 +29,7 @@ public class script_goalieAI : MonoBehaviour {
 	void Start () {
 
         active = false;
+        restPosition = transform.position;
 
 	}
 	
@@ -40,13 +43,13 @@ public class script_goalieAI : MonoBehaviour {
 
         }
 
-        if(active == true)
+        if (active == true)
         {
 
-            if(isLicking == false)
+            if (isLicking == false)
             {
 
-                if(readyToLick == true)
+                if (readyToLick == true)
                 {
 
                     isLicking = true;
@@ -65,6 +68,14 @@ public class script_goalieAI : MonoBehaviour {
             }
 
         }
+        else if (active == false)
+        {
+
+            navAgent.destination = restPosition;
+            navAgent.speed = walkSpeed;
+
+        }
+
 
 	}
 }

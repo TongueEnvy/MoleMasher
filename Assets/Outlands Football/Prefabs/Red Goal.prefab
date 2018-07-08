@@ -38,6 +38,7 @@ GameObject:
   - component: {fileID: 4093378886120168}
   - component: {fileID: 136924340013817114}
   - component: {fileID: 195101553818109164}
+  - component: {fileID: 114657532223065714}
   - component: {fileID: 114520297794418762}
   m_Layer: 0
   m_Name: Goalie
@@ -368,6 +369,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4838354652561866}
   - component: {fileID: 135265508572742638}
+  - component: {fileID: 114975653975504400}
   m_Layer: 0
   m_Name: Left_Calf
   m_TagString: Untagged
@@ -384,6 +386,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4409345999190076}
   - component: {fileID: 135784080966057096}
+  - component: {fileID: 114682555571042018}
   m_Layer: 0
   m_Name: Right_Calf
   m_TagString: Untagged
@@ -1555,6 +1558,50 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goalie: {fileID: 1081986914425028}
+--- !u!114 &114657532223065714
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1081986914425028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2b7c4be6cfa40445b5f1a26e8f1cedb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 0}
+  run: {fileID: 0}
+  stand: {fileID: 0}
+  movement: {fileID: 0}
+  model: {fileID: 0}
+  horAxis: 
+  vertAxis: 
+  runspeed: 0
+  kickforce: 5
+--- !u!114 &114682555571042018
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1562130122120296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 991e504567a46694c9b81e429448bccb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1081986914425028}
+--- !u!114 &114975653975504400
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1538586947185222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 991e504567a46694c9b81e429448bccb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1081986914425028}
 --- !u!114 &114976987170141778
 MonoBehaviour:
   m_ObjectHideFlags: 1
