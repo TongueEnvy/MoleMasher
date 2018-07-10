@@ -179,6 +179,7 @@ GameObject:
   - component: {fileID: 54736526579947798}
   - component: {fileID: 114710753570118634}
   - component: {fileID: 114673611581972280}
+  - component: {fileID: 114615204095814680}
   m_Layer: 10
   m_Name: CaptainJake
   m_TagString: Untagged
@@ -465,7 +466,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1894343208201948
 GameObject:
   m_ObjectHideFlags: 1
@@ -542,14 +543,14 @@ Transform:
   - {fileID: 4462203922425384}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!4 &4181765178341164
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1053189137465364}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
   m_LocalPosition: {x: -0, y: 0.3416615, z: 1.2600764}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -591,9 +592,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1572830791913752}
-  m_LocalRotation: {x: -0.61150056, y: -0.43276155, z: -0.3550591, w: 0.55921155}
+  m_LocalRotation: {x: -0.7057758, y: -0.670142, z: 0.0433649, w: 0.22563177}
   m_LocalPosition: {x: -0.4237887, y: 0.000000031995153, z: -0.000000044703484}
-  m_LocalScale: {x: 1, y: 0.99999994, z: 1}
+  m_LocalScale: {x: 1, y: 0.9999999, z: 1}
   m_Children:
   - {fileID: 4541591556774630}
   m_Father: {fileID: 4630464598293726}
@@ -618,7 +619,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1686921019856780}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.13952744, y: 0, z: 0, w: 0.9902182}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 0.25000006, y: 0.25, z: 0.25000006}
   m_Children:
@@ -678,7 +679,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1220525001790114}
-  m_LocalRotation: {x: -0.0000001435257, y: 0.10378314, z: -0.000000010571035, w: 0.9946}
+  m_LocalRotation: {x: 0, y: 0.10378203, z: 0, w: 0.99460006}
   m_LocalPosition: {x: -0.4757792, y: -0.000000001455779, z: 0.000000010011661}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -732,7 +733,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1143864221462962}
-  m_LocalRotation: {x: -0.00000017247645, y: 0.10378312, z: -0.000000024605471, w: 0.9946}
+  m_LocalRotation: {x: 0, y: 0.5044899, z: 0, w: 0.8634176}
   m_LocalPosition: {x: -0.47577903, y: 0.000000079824055, z: -0.000000014824209}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -799,7 +800,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1674265576364666}
-  m_LocalRotation: {x: -0.55921143, y: 0.35505936, z: 0.43276128, w: 0.6115007}
+  m_LocalRotation: {x: -0.70667684, y: 0.6453628, z: 0.024659112, w: 0.28897533}
   m_LocalPosition: {x: -0.4237887, y: 0.00000003199515, z: 0.00000008940697}
   m_LocalScale: {x: 0.9999998, y: 0.99999994, z: 0.9999998}
   m_Children:
@@ -827,7 +828,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1894343208201948}
-  m_LocalRotation: {x: -0.0061172876, y: 0.12907845, z: -0.046942648, w: 0.9905038}
+  m_LocalRotation: {x: 0.34687203, y: -0.12496009, z: -0.48045534, w: 0.79575586}
   m_LocalPosition: {x: -0.56547755, y: 0.0000000426924, z: 0.00000022351742}
   m_LocalScale: {x: 1.0000001, y: 1, z: 0.99999994}
   m_Children:
@@ -841,8 +842,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1442837287347646}
-  m_LocalRotation: {x: 0.0000000029782163, y: -0.000000025398345, z: 0.077775106,
-    w: 0.99697095}
+  m_LocalRotation: {x: 0, y: 0, z: 0.6007063, w: 0.7994698}
   m_LocalPosition: {x: -0.7025427, y: 0.000000052686154, z: -0.000000044375533}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -883,8 +883,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1821815061371096}
-  m_LocalRotation: {x: 0.000000016547965, y: -0.000000013744104, z: -0.077775106,
-    w: 0.99697095}
+  m_LocalRotation: {x: 0, y: 0, z: -0.80596966, w: 0.5919569}
   m_LocalPosition: {x: -0.70254266, y: 0.000000055738617, z: 0.0000004548901}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -939,7 +938,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1806931529924132}
-  m_LocalRotation: {x: 0.9905038, y: -0.046942756, z: 0.12907843, w: -0.006117539}
+  m_LocalRotation: {x: -0.88321584, y: -0.33506805, z: 0.258188, w: -0.20248026}
   m_LocalPosition: {x: -0.56547755, y: 0.00000004269245, z: -0.00000022351742}
   m_LocalScale: {x: 1.0000001, y: 1, z: 1}
   m_Children:
@@ -1006,6 +1005,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1252478257565700}
+--- !u!114 &114615204095814680
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1252478257565700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33fc1f21bc88fe64faa6421ecae7f6b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerSlide: {fileID: 7400000, guid: b5a9b918cfed8d04e8600d2be622f0de, type: 2}
+  speedFactor: 12
+  slideTimer: 20
+  fireIntensity: 100
+  kickFactor: 2
+  staminaCost: 75
+  foot: {fileID: 1837459802143934}
+  footFire: {fileID: 198267168882867002}
 --- !u!114 &114673611581972280
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1033,10 +1051,17 @@ MonoBehaviour:
   stand: {fileID: 7400000, guid: 79859f7e416d8ca4fa0cd7d8a21961f4, type: 2}
   movement: {fileID: 54736526579947798}
   model: {fileID: 1252478257565700}
+  barBlocker: {fileID: 0}
   horAxis: Gamepad 1 Horizontal
   vertAxis: Gamepad 1 Vertical
+  specialButton1: Gamepad 1 A Button
+  specialButton2: Gamepad 1 X Button
   runspeed: 4
-  kickforce: 7
+  kickforce: 5
+  kickFactor: 1
+  maxStamina: 100
+  currentStamina: 0
+  manualMove: 1
 --- !u!114 &114739350052967282
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1057,7 +1082,7 @@ SphereCollider:
   m_GameObject: {fileID: 1143864221462962}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Radius: 1
   m_Center: {x: -0.5, y: 0, z: 0}
@@ -1069,7 +1094,7 @@ SphereCollider:
   m_GameObject: {fileID: 1220525001790114}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Radius: 1
   m_Center: {x: -0.5, y: 0, z: 0}
@@ -1569,7 +1594,7 @@ ParticleSystem:
       m_RotationOrder: 4
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
-  scalingMode: 1
+  scalingMode: 0
   randomSeed: 0
   InitialModule:
     serializedVersion: 3
@@ -2127,7 +2152,7 @@ ParticleSystem:
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
     donutRadius: 0.2
-    m_Position: {x: -0.125, y: 0, z: 0}
+    m_Position: {x: -0.25, y: 0, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
     m_Scale: {x: 1, y: 1, z: 1}
     placementMode: 0
@@ -2269,7 +2294,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 25
+      scalar: 100
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -2710,16 +2735,16 @@ ParticleSystem:
         key0: {r: 0, g: 0.09174347, b: 1, a: 1}
         key1: {r: 1, g: 0, b: 0.079030514, a: 1}
         key2: {r: 1, g: 0.62352943, b: 0, a: 0}
-        key3: {r: 0, g: 0, b: 0, a: 0}
-        key4: {r: 1, g: 0, b: 0.72537994, a: 0}
+        key3: {r: 1, g: 0.98764175, b: 0, a: 0}
+        key4: {r: 1, g: 0.62352943, b: 0, a: 0}
         key5: {r: 0, g: 0, b: 0, a: 0}
         key6: {r: 0, g: 0, b: 0, a: 0}
         key7: {r: 0, g: 0, b: 0, a: 0}
         ctime0: 0
         ctime1: 4819
-        ctime2: 65535
-        ctime3: 45489
-        ctime4: 65535
+        ctime2: 50501
+        ctime3: 65535
+        ctime4: 57632
         ctime5: 0
         ctime6: 0
         ctime7: 0
@@ -2732,7 +2757,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
-        m_NumColorKeys: 3
+        m_NumColorKeys: 4
         m_NumAlphaKeys: 2
       minGradient:
         serializedVersion: 2
@@ -6100,7 +6125,7 @@ ParticleSystem:
       m_RotationOrder: 4
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
-  scalingMode: 1
+  scalingMode: 0
   randomSeed: 0
   InitialModule:
     serializedVersion: 3
@@ -6277,7 +6302,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.5
+      scalar: 2
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -6800,7 +6825,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 25
+      scalar: 100
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -6925,13 +6950,13 @@ ParticleSystem:
           inWeight: 0.33333334
           outWeight: 0.33333334
         - serializedVersion: 3
-          time: 1
+          time: 0.49420166
           value: 0
-          inSlope: -0.6486702
-          outSlope: -0.6486702
+          inSlope: -0.1489508
+          outSlope: -0.1489508
           tangentMode: 0
           weightedMode: 0
-          inWeight: 0.07053143
+          inWeight: 0.17551965
           outWeight: 0.33333334
         m_PreInfinity: 2
         m_PostInfinity: 2
@@ -7241,16 +7266,16 @@ ParticleSystem:
         key0: {r: 0, g: 0.09174347, b: 1, a: 1}
         key1: {r: 1, g: 0, b: 0.079030514, a: 1}
         key2: {r: 1, g: 0.62352943, b: 0, a: 0}
-        key3: {r: 0, g: 0, b: 0, a: 0}
-        key4: {r: 1, g: 0, b: 0.72537994, a: 0}
+        key3: {r: 1, g: 0.98764175, b: 0, a: 0}
+        key4: {r: 1, g: 0.62352943, b: 0, a: 0}
         key5: {r: 0, g: 0, b: 0, a: 0}
         key6: {r: 0, g: 0, b: 0, a: 0}
         key7: {r: 0, g: 0, b: 0, a: 0}
         ctime0: 0
         ctime1: 4819
-        ctime2: 65535
-        ctime3: 45489
-        ctime4: 65535
+        ctime2: 50501
+        ctime3: 65535
+        ctime4: 57632
         ctime5: 0
         ctime6: 0
         ctime7: 0
@@ -7263,7 +7288,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
-        m_NumColorKeys: 3
+        m_NumColorKeys: 4
         m_NumAlphaKeys: 2
       minGradient:
         serializedVersion: 2

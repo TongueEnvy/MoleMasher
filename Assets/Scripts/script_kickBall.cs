@@ -9,6 +9,7 @@ public class script_kickBall : MonoBehaviour {
     public GameObject player;
 
     float kickForce;
+    float kickFactor;
 
 	// Use this for initialization
 	void Start () {
@@ -24,8 +25,9 @@ public class script_kickBall : MonoBehaviour {
         if(other.tag == "Ball")
         {
 
-            other.GetComponent<Rigidbody>().velocity = movement.velocity.normalized * kickForce;
-            other.GetComponent<Rigidbody>().velocity += new Vector3(0, 4, 0);
+            var finalKickPower = kickForce * kickFactor;
+            other.GetComponent<Rigidbody>().velocity = movement.transform.forward * finalKickPower;
+            other.GetComponent<Rigidbody>().velocity = new Vector3(other.GetComponent<Rigidbody>().velocity.x, 4, other.GetComponent<Rigidbody>().velocity.z);
 
         }
 
@@ -33,6 +35,8 @@ public class script_kickBall : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-		
-	}
+
+        kickFactor = player.GetComponent<script_stats>().kickFactor;
+
+    }
 }

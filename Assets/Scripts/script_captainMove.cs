@@ -12,6 +12,8 @@ public class script_captainMove : MonoBehaviour {
     string horAxis;
     string vertAxis;
 
+    bool manualMove;
+
     Rigidbody movement;
 
     GameObject model;
@@ -35,27 +37,34 @@ public class script_captainMove : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+        manualMove = gameObject.GetComponent<script_stats>().manualMove;
+
         var measureInput = new Vector3();
         measureInput.x = Input.GetAxisRaw(horAxis);
         measureInput.z = Input.GetAxisRaw(vertAxis);
 
-        if(measureInput != Vector3.zero)
+        if (manualMove == true)
         {
 
-            model.transform.LookAt(transform.position + measureInput);
-            anim.Play(run.name);
-            anim.speed = measureInput.magnitude;
+            if (measureInput != Vector3.zero)
+            {
+
+                model.transform.LookAt(transform.position + measureInput);
+                anim.Play(run.name);
+                anim.speed = measureInput.magnitude;
+
+            }
+            else
+            {
+
+                anim.Play(stand.name);
+                anim.speed = 1;
+
+            }
+
+            movement.velocity = new Vector3(measureInput.x * runSpeed, 0, measureInput.z * runSpeed);
 
         }
-        else
-        {
-
-            anim.Play(stand.name);
-            anim.speed = 1;
-
-        }
-
-        movement.velocity = new Vector3(measureInput.x * runSpeed, 0, measureInput.z * runSpeed);
 
 
     }
