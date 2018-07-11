@@ -1021,7 +1021,7 @@ MonoBehaviour:
   slideTimer: 20
   fireIntensity: 100
   kickFactor: 2
-  staminaCost: 75
+  staminaCost: 50
   foot: {fileID: 1837459802143934}
   footFire: {fileID: 198267168882867002}
 --- !u!114 &114673611581972280
@@ -1060,7 +1060,7 @@ MonoBehaviour:
   kickforce: 5
   kickFactor: 1
   maxStamina: 100
-  currentStamina: 0
+  currentStamina: 100
   manualMove: 1
 --- !u!114 &114739350052967282
 MonoBehaviour:
